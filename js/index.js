@@ -29,8 +29,8 @@ function refreshCart() {
 function onCart() {
     var noItems = false;
     var total = 0;
-    output = "";
     refreshCart();
+    output = "";
     for (let index = 0; index < checkedBoxes.length; index++) {
         var priceBox = prices[index];
         var nameBox = names[index];
