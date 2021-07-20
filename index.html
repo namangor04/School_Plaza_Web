@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Plaza | One Stop Educational Shop</title>
+
+    <link rel="stylesheet" href="./font-awesome/css/all.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/card_design.css">
+    <link rel="stylesheet" href="./css/toast.css">
+</head>
+
+<body onload="return init()">
+    <div class="header">
+        <div class="header-row">
+            <div class="header-title">
+                <div>School Plaza</div>
+                <div>One Stop Educational Shop</div>
+            </div>
+            <img src="./images/school_hm_page_img.jpeg" alt="School Plaza LOGO" class="scl-img">
+        </div>
+        <div class="header-row">
+            <div class="row-item" onclick="return itemClickResponse(1)">School Bag</div>
+            <div class="row-item" onclick="return itemClickResponse(2)">Water Bottle</div>
+            <div class="row-item" onclick="return itemClickResponse(3)">Lunch Box</div>
+            <div class="row-item" onclick="return itemClickResponse(4)">Compass Box</div>
+            <div class="row-item" onclick="return itemClickResponse(5)">Files and Folders</div>
+            <div class="row-item" onclick="return itemClickResponse(6)">Stationary Items</div>
+        </div>
+    </div>
+    <div class="cards-layout">
+        <div class="card">
+            <img src="https://n1.sdlcdn.com/imgs/i/f/z/American-Tourister-Black-School-Bag-SDL278142231-1-7f09f.jpeg" alt="Bag 1" class="card_img">
+            <div class="card_cont">
+                <span id="n1">Name: Classic Black</span><br> MRP: Rs. <span id="p1">3000</span><br>
+            </div>
+            <div class="card_actions">
+                <div>
+                    <input type="checkbox" name="c1" id="c1" onclick="return onItemChecked(0)">
+                </div>
+                <div>
+                    Cart it
+                </div>
+                <div>
+                    <input name="qty1" id="qty1" type="text" size="1" value="1" class="card_qty"></textarea>
+                </div>
+                <div onclick="return openImage('https://n1.sdlcdn.com/imgs/i/f/z/American-Tourister-Black-School-Bag-SDL278142231-1-7f09f.jpeg')" class="zoom_image_btn">
+                    Zoom Image
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://5.imimg.com/data5/MY/XC/UV/SELLER-4107209/american-tourister-500x500.jpg" alt="Bag 1" class="card_img">
+            <div class="card_cont">
+                <span id="n2">Name: Mountaineer's Camp Bag</span><br> MRP: Rs. <span id="p2">2000</span><br>
+            </div>
+            <div class="card_actions">
+                <div>
+                    <input type="checkbox" name="c2" id="c2" onclick="return onItemChecked(1)">
+                </div>
+                <div>
+                    Cart it
+                </div>
+                <div>
+                    <input name="qty2" id="qty2" type="text" size="1" value="1" class="card_qty"></textarea>
+                </div>
+                <div onclick="return openImage('https://5.imimg.com/data5/MY/XC/UV/SELLER-4107209/american-tourister-500x500.jpg')" class="zoom_image_btn">
+                    Zoom Image
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://5.imimg.com/data5/IE/SX/QL/SELLER-69048669/american-tourister-35-l-school-backpack-with-1-year-warranty-500x500.jpeg" alt="Bag 1" class="card_img">
+            <div class="card_cont">
+                <span id="n3">Name: Red School Bag</span><br> MRP: Rs. <span id="p3">1000</span><br>
+            </div>
+            <div class="card_actions">
+                <div>
+                    <input type="checkbox" name="c3" id="c3" onclick="return onItemChecked(2)">
+                </div>
+                <div>
+                    Cart it
+                </div>
+                <div>
+                    <input name="qty3" id="qty3" type="text" size="1" value="1" class="card_qty"></textarea>
+                </div>
+                <div onclick="return openImage('https://5.imimg.com/data5/IE/SX/QL/SELLER-69048669/american-tourister-35-l-school-backpack-with-1-year-warranty-500x500.jpeg')" class="zoom_image_btn">
+                    Zoom Image
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91Vgy0Oqn8L._UL1500_.jpg" alt="Bag 1" class="card_img">
+            <div class="card_cont">
+                <span id="n4">Name: Zebra Bag</span><br> MRP: Rs. <span id="p4">600</span><br>
+            </div>
+            <div class="card_actions">
+                <div>
+                    <input type="checkbox" name="c4" id="c4" onclick="return onItemChecked(3)">
+                </div>
+                <div>
+                    Cart it
+                </div>
+                <div>
+                    <input name="qty4" id="qty4" type="text" size="1" value="1" class="card_qty"></textarea>
+                </div>
+                <div onclick="return openImage('https://images-na.ssl-images-amazon.com/images/I/91Vgy0Oqn8L._UL1500_.jpg')" class="zoom_image_btn">
+                    Zoom Image
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://rukminim1.flixcart.com/image/714/857/k3xcdjk0/backpack/z/8/w/backpack-with-rain-cover-for-boys-and-girls-at-laptop-backpack-original-imafmv3kxcnahhs3.jpeg?q=50" alt="Bag 1" class="card_img">
+            <div class="card_cont">
+                <span id="n5">Name: Blue-Grey Simple Bag</span><br> MRP: Rs. <span id="p5">800</span><br>
+            </div>
+            <div class="card_actions">
+                <div>
+                    <input type="checkbox" name="c5" id="c5" onclick="return onItemChecked(4)">
+                </div>
+                <div>
+                    Cart it
+                </div>
+                <div>
+                    <input name="qty5" id="qty5" type="text" size="1" value="1" class="card_qty"></textarea>
+                </div>
+                <div onclick="return openImage('https://rukminim1.flixcart.com/image/714/857/k3xcdjk0/backpack/z/8/w/backpack-with-rain-cover-for-boys-and-girls-at-laptop-backpack-original-imafmv3kxcnahhs3.jpeg?q=50')" class="zoom_image_btn">
+                    Zoom Image
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71%2Bxfz79pWL._SX466_.jpg" alt="Bag 1" class="card_img">
+            <div class="card_cont">
+                <span id="n6">Name: Tech Geek Bag</span><br> MRP: Rs. <span id="p6">3000</span><br>
+            </div>
+            <div class="card_actions">
+                <div>
+                    <input type="checkbox" name="c6" id="c6" onclick="return onItemChecked(5)">
+                </div>
+                <div>
+                    Cart it
+                </div>
+                <div>
+                    <input name="qty6" id="qty6" type="text" size="1" value="1" class="card_qty"></textarea>
+                </div>
+                <div onclick="return openImage('https://images-na.ssl-images-amazon.com/images/I/71%2Bxfz79pWL._SX466_.jpg')" class="zoom_image_btn">
+                    Zoom Image
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://5.imimg.com/data5/CR/CY/PD/SELLER-69048669/american-tourister-35-liter-school-backpack-500x500.jpeg" alt="Bag 1" class="card_img">
+            <div class="card_cont">
+                <span id="n7">Name: Pink School Bag</span><br> MRP: Rs. <span id="p7">1000</span><br>
+            </div>
+            <div class="card_actions">
+                <div>
+                    <input type="checkbox" name="c7" id="c7" onclick="return onItemChecked(6)">
+                </div>
+                <div>
+                    Cart it
+                </div>
+                <div>
+                    <input name="qty7" id="qty7" type="text" size="1" value="1" class="card_qty"></textarea>
+                </div>
+                <div onclick="return openImage('https://5.imimg.com/data5/CR/CY/PD/SELLER-69048669/american-tourister-35-liter-school-backpack-500x500.jpeg')" class="zoom_image_btn">
+                    Zoom Image
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://rukminim1.flixcart.com/image/612/612/kkprmvk0/backpack/g/p/z/snap-nxt-03-snap03red-backpack-american-tourister-35-original-imagyy66hvgjksuq.jpeg?q=70" alt="Bag 1" class="card_img">
+            <div class="card_cont">
+                <span id="n8">Name: Red School Bag 2.0</span><br> MRP: Rs. <span id="p8">1200</span><br>
+            </div>
+            <div class="card_actions">
+                <div>
+                    <input type="checkbox" name="c8" id="c8" onclick="return onItemChecked(7)">
+                </div>
+                <div>
+                    Cart it
+                </div>
+                <div>
+                    <input name="qty8" id="qty8" type="text" size="1" value="1" class="card_qty"></textarea>
+                </div>
+                <div onclick="return openImage('https://rukminim1.flixcart.com/image/612/612/kkprmvk0/backpack/g/p/z/snap-nxt-03-snap03red-backpack-american-tourister-35-original-imagyy66hvgjksuq.jpeg?q=70')" class="zoom_image_btn">
+                    Zoom Image
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71+y6w3PG1L._AC_UL320_.jpg" alt="Bag 1" class="card_img">
+            <div class="card_cont">
+                <span id="n9">Name: American Tourister Classic Bag</span><br> MRP: Rs. <span id="p9">2500</span><br>
+            </div>
+            <div class="card_actions">
+                <div>
+                    <input type="checkbox" name="c9" id="c9" onclick="return onItemChecked(8)">
+                </div>
+                <div>
+                    Cart it
+                </div>
+                <div>
+                    <input type="text" name="qty9" id="qty9" size="1" value="1" class="card_qty">
+                </div>
+                <div onclick="return openImage('https://m.media-amazon.com/images/I/71+y6w3PG1L._AC_UL320_.jpg')" class="zoom_image_btn">
+                    Zoom Image
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-button" onclick="return onCart()">
+        View My Cart
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="./js/funcs.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
