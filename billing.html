@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Plaza | Billing</title>
+
+    <link rel="stylesheet" href="./css/billing.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/card_design.css">
+    <link rel="stylesheet" href="./css/toast.css">
+</head>
+
+<body onload="return onLoad()">
+
+    <div class="header">
+        <div class="header-row">
+            <div class="header-title">
+                <div>School Plaza</div>
+                <div>One Stop Educational Shop</div>
+            </div>
+            <img src="./images/school_hm_page_img.jpeg" alt="School Plaza LOGO" class="scl-img">
+        </div>
+        <div class="header-row">
+            <div class="row-item" onclick="return itemClickResponse(1)">School Bag</div>
+            <div class="row-item" onclick="return itemClickResponse(2)">Water Bottle</div>
+            <div class="row-item" onclick="return itemClickResponse(3)">Lunch Box</div>
+            <div class="row-item" onclick="return itemClickResponse(4)">Compass Box</div>
+            <div class="row-item" onclick="return itemClickResponse(5)">Files and Folders</div>
+            <div class="row-item" onclick="return itemClickResponse(6)">Stationary Items</div>
+        </div>
+        <h1 class="white-text">Billing Page: </h1>
+        <h1 class="white-text">Your Carted Items are shown below, along with their details</h1>
+    </div>
+
+    <div class="cards-layout" id="appendent">
+    </div>
+
+    <div class="bill">
+        <div class="center-no-pad-top">
+            <div class="column">
+                <div class="row">
+                    <h1>Your Billing Summary</h1>
+                </div>
+                <div class="row" id="bill-row">
+                </div>
+            </div>
+            <div class="pay-btn"><button id="pay-btn" onclick="return onPayClick()">Pay Now</button></div>
+        </div>
+    </div>
+
+    <div id="toast">We are not accepting payments right now, Please try again later!</div>
+
+    <script src="./js/billing.js"></script>
+    <script src="./js/funcs.js"></script>
+</body>
+
+</html>

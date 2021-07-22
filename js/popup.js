@@ -12,8 +12,15 @@ function onLoad() {
     log(`url = ${url}, data = ${data}`);
     desc.innerText = data["cart"]; */
     desc.innerText = localStorage["cart"];
+    window.addEventListener('storage', function() {
+        desc.innerText = localStorage["cart"];
+    });
     log('Text Set');
 }
+
+document.getElementById("open-bill-btn").addEventListener("click", function() {
+    location.href = "./billing.html";
+});
 
 document.getElementById("dismiss-popup-btn").addEventListener("click", function() {
     ///use this

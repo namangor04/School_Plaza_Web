@@ -10,6 +10,12 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .popup {
     width: 350px;
     height: auto;

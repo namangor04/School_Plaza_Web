@@ -89,3 +89,8 @@
     transition: all 300ms;
     transform: scale(1.0);
 }
+
+.price {
+    color: blue;
+    text-decoration: underline;
+}
